@@ -7,7 +7,7 @@
 import socket
 
 
-HOST_IP = '127.0.0.1'
+HOST_IP = '0.0.0.0'
 PORT = 12345
 BUFSIZ = 1024
 ADDR = (HOST_IP, PORT)
@@ -16,6 +16,7 @@ if __name__ == '__main__':
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as socket_tcp:
         socket_tcp.bind(ADDR)
         socket_tcp.listen(5)
+        print('[*] Waiting for connection')
         connection, addr = socket_tcp.accept()
         with connection:
             print('[*] Established connection')
