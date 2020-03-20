@@ -14,7 +14,7 @@ ADDR = (HOST_IP, PORT)
 
 if __name__ == '__main__':
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as socket_tcp:
-        socket_tcp.bind(ADDR)
+        socket_tcp.bind(("0.0.0.0", 8081))
         socket_tcp.listen(5)
         connection, addr = socket_tcp.accept()
         with connection:
