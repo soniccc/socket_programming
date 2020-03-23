@@ -4,7 +4,7 @@ import socket
 
 udp_client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
-image = Image.open("nat.bmp")
+image = Image.open("../../images/nat.bmp")
 
 width, height = image.size
 print(width, height)
