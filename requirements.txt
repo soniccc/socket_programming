@@ -1,0 +1,2 @@
+fl-networking-tools==0.0.6
+Pillow==7.0.0
