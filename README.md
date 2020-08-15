@@ -1,6 +1,6 @@
 # socket_programming
 
-Ok, so this repo is really just for me to develope small apps using the python library. If I've given you permission to access
+Ok, so this repo is really just for me to develop small apps using the python library. If I've given you permission to access
 this repo, cool! If I haven't what the .....
 
 client_server_app
